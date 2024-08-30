@@ -22,6 +22,15 @@ class Block {
       "data2,data3",
     ]); // call constructor
   }
-}
 
+  static mineBlock(lastBlock, ownData) {
+    // weitere Blocks in der Chain
+
+    const timestamp = Date.now(); // Zeit im ms seit 01.01.1970 | UNIX
+    const lastHash = lastBlock.hash;
+    const hash = "fakeIt";
+
+    return new this(timestamp, lastHash, hash, ownData); // call constructor
+  }
+}
 module.exports = Block; // Export als Modul
