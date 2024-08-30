@@ -13,3 +13,6 @@ const Blockchain = require("./blockchain");
 /***  Test der Blockchain-Funktionalität  */
 const chain = new Blockchain();
 console.log(chain);
+
+chain.addBlock("69420€ von Morell");
+console.log(chain);
